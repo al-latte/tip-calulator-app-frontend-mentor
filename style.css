@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+:root {
+	--strong-cyan: #26c0ab;
+	--accent-cyan: #2decd2;
+
+	--very-dark-cyan: hsl(183, 100%, 15%);
+	--Dark-grayish-cyan: hsl(186, 14%, 43%);
+	--Grayish-cyan: hsl(184, 14%, 56%);
+	--Light-grayish-cyan: hsl(185, 41%, 84%);
+	--Very-light-grayish-cyan: hsl(189, 41%, 97%);
+	--White: hsl(0, 0%, 100%);
+}
+
+body {
+	font-size: 16;
+	font-family: "Space Mono", monospace;
+	background-color: var(--Light-grayish-cyan);
+	color: var(--Dark-grayish-cyan);
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.header {
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.main {
+	background-color: var(--White);
+	border-radius: 15px 15px 0 0;
+	padding: 1.5rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+/* Makes number input field look like normal text input field */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font: inherit;
+	font-size: 1.5rem;
+	text-align: right;
+	color: var(--very-dark-cyan);
+}
+
+#bill,
+#people {
+	width: 100%;
+	display: block;
+	background-color: var(--Very-light-grayish-cyan);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-radius: 5px;
+	position: relative;
+}
+
+#dollar-sign,
+#person {
+	max-width: 100%;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+}
+
+.bill-div,
+.people-div {
+	position: relative;
+}
+
+input::placeholder {
+	color: var(--Grayish-cyan);
+}
+
+.btn {
+	font: inherit;
+	font-size: 1.2rem;
+	border: none;
+	color: var(--White);
+	background-color: var(--very-dark-cyan);
+	padding: 0.5rem 2.5rem;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.btn:focus {
+	background-color: var(--strong-cyan);
+	color: var(--very-dark-cyan);
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: var(--accent-cyan);
+	color: var(--very-dark-cyan);
+	cursor: pointer;
+}
+
+.tip-btn {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	row-gap: 15px;
+	column-gap: 20px;
+}
+
+#custom-percent {
+	background-color: var(--Very-light-grayish-cyan);
+	text-align: right;
+	color: var(--very-dark-cyan);
+}
+
+#custom-percent::placeholder {
+	color: var(--Dark-grayish-cyan);
+}
+
+#custom-percent:focus {
+	outline: 1px solid var(--accent-cyan);
+}
+
+.info {
+	background-color: var(--very-dark-cyan);
+	color: var(--White);
+	padding: 2rem 1.5rem;
+	border-radius: 15px;
+}
+
+.amount,
+.total {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.info span {
+	color: var(--Grayish-cyan);
+	font-size: 12px;
+}
+
+.result {
+	color: var(--strong-cyan);
+	font-size: 2rem;
+}
+
+#reset-btn {
+	background-color: var(--strong-cyan);
+	text-align: center;
+	width: 100%;
+	padding: 0.5rem 0;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	color: var(--very-dark-cyan);
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+#reset-btn:hover {
+	background-color: var(--accent-cyan);
+}
+
+.title {
+	margin-bottom: 0.5rem;
+}
+
+.bill,
+.tip,
+.people {
+	margin-bottom: 1.5rem;
+}
+
+.generated {
+	float: right;
+	font-size: 0.85rem;
+	color: #ad7665;
+}
+
+.valid:focus {
+	outline: 2px solid #2decd2;
+}
+
+.inValid:focus {
+	outline: 2px solid #ad7665;
+}
+
+@media screen and (min-width: 1023px) {
+	.wrapper {
+		width: 900px;
+		height: 100vh;
+		margin-inline: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.main {
+		display: flex;
+		justify-content: space-between;
+		min-height: 400px;
+		border-radius: 15px;
+	}
+
+	.sect1,
+	.sect2 {
+		width: 47.5%;
+	}
+	.tip-btn {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	#reset-btn {
+		margin-top: 4rem;
+	}
+
+	.result {
+		font-size: 3rem;
+	}
+	.header {
+		margin-bottom: 3rem;
+		margin-top: -3rem;
+	}
+	#custom-percent {
+		padding: 0.5rem;
+	}
+}

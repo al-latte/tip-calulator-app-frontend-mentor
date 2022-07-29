@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Tip calculator app</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<h1 class="heading">
+					<img src="images/logo.svg" alt="Splitter logo" />
+				</h1>
+			</header>
+			<main class="main">
+				<section class="sect1">
+					<section class="bill">
+						<p class="title">Bill <span class="generated"></span></p>
+
+						<div class="bill-div">
+							<input id="bill" type="number" step="0.01" placeholder="0" />
+							<img
+								src="images/icon-dollar.svg"
+								alt="Dollar sign"
+								id="dollar-sign"
+							/>
+						</div>
+					</section>
+
+					<section class="tip">
+						<p class="title">Select Tip %</p>
+						<div class="tip-btn">
+							<button id="5-percent" class="btn percent" value="0.05">
+								5%
+							</button>
+							<button id="10-percent" class="btn percent" value="0.10">
+								10%
+							</button>
+							<button id="15-percent" class="btn percent" value="0.15">
+								15%
+							</button>
+							<button id="25-percent" class="btn percent" value="0.25">
+								25%
+							</button>
+							<button id="50-percent" class="btn percent" value="0.50">
+								50%
+							</button>
+							<input
+								id="custom-percent"
+								class="btn"
+								type="number"
+								step="0.01"
+								placeholder="Custom"
+							/>
+						</div>
+					</section>
+
+					<section class="people">
+						<p class="title">
+							Number of People <span class="generated"></span>
+						</p>
+						<div class="people-div">
+							<input id="people" type="number" step="0.01" placeholder="0" />
+							<img src="images/icon-person.svg" alt="" id="person" />
+						</div>
+					</section>
+				</section>
+
+				<section class="info sect2">
+					<div class="amount">
+						<p>
+							Tip Amount <br />
+							<span>/ person</span>
+						</p>
+						<p id="tip-result" class="result">$0.00</p>
+					</div>
+
+					<div class="total">
+						<p>
+							Total <br />
+							<span>/ person</span>
+						</p>
+						<p id="total-result" class="result">$0.00</p>
+					</div>
+					<button id="reset-btn">RESET</button>
+				</section>
+			</main>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
