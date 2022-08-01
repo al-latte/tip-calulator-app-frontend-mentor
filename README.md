@@ -53,5 +53,5 @@ Problems are solved through trial and error.
 ## Author
 
 - GitHub Profile - [karlisha Roberts](https://github.com/al-latte)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@al-latte](https://www.frontendmentor.io/profile/al-latte)
 - Instagram - [@kally.dev](https://www.twitter.com/yourusername)
