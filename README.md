@@ -48,7 +48,7 @@ Problems are solved through trial and error.
 
 ### Useful resources
 
-- [#0 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) - This helped me to get started with JavaScript.
+- [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) - This helped me to get started with JavaScript.
 
 ## Author
 
