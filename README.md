@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/al-latte/tip-calulator-app-frontend-mentor)
-- Live Site URL: [](https://al-latte.github.io/tip-calulator-app-frontend-mentor/)
+- Solution URL: [Solution](https://github.com/al-latte/tip-calulator-app-frontend-mentor)
+- Live Site URL: [Live](https://al-latte.github.io/tip-calulator-app-frontend-mentor/)
 
 ### Built with
 
