@@ -46,28 +46,6 @@ Users should be able to:
 
 Problems are solved through trial and error.
 
-```html
-<h1>Some JavaScript code I'm proud of</h1>
-```
-
-```js
-buttons.forEach((btn) => {
-	let btnVal = btn.value;
-
-	btn.addEventListener("click", calculateTip);
-
-	function calculateTip() {
-		tip = parseFloat(bill.value) * btnVal;
-		tipPerPerson = tip / parseFloat(people.value);
-		billPerPerson = parseFloat(bill.value) / parseFloat(people.value);
-		totalPerPerson = billPerPerson + tipPerPerson;
-
-		tipResult.innerHTML = `$${tipPerPerson.toFixed(2)}`;
-		totalResult.innerHTML = `$${totalPerPerson.toFixed(2)}`;
-	}
-});
-```
-
 ### Useful resources
 
 - [#0 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) - This helped me to get started with JavaScript.
