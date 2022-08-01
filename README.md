@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/al-latte/tip-calulator-app-frontend-mentor)
-- Live Site URL: [](https://al-latte.github.io/tip-calulator-app-frontend-mentor/)
+- Solution URL: [Solution](https://github.com/al-latte/tip-calulator-app-frontend-mentor)
+- Live Site URL: [Live](https://al-latte.github.io/tip-calulator-app-frontend-mentor/)
 
 ### Built with
 
@@ -46,34 +46,12 @@ Users should be able to:
 
 Problems are solved through trial and error.
 
-```html
-<h1>Some JavaScript code I'm proud of</h1>
-```
-
-```js
-buttons.forEach((btn) => {
-	let btnVal = btn.value;
-
-	btn.addEventListener("click", calculateTip);
-
-	function calculateTip() {
-		tip = parseFloat(bill.value) * btnVal;
-		tipPerPerson = tip / parseFloat(people.value);
-		billPerPerson = parseFloat(bill.value) / parseFloat(people.value);
-		totalPerPerson = billPerPerson + tipPerPerson;
-
-		tipResult.innerHTML = `$${tipPerPerson.toFixed(2)}`;
-		totalResult.innerHTML = `$${totalPerPerson.toFixed(2)}`;
-	}
-});
-```
-
 ### Useful resources
 
-- [#0 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) - This helped me to get started with JavaScript.
+- [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) - This helped me to get started with JavaScript.
 
 ## Author
 
 - GitHub Profile - [karlisha Roberts](https://github.com/al-latte)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@al-latte](https://www.frontendmentor.io/profile/al-latte)
 - Instagram - [@kally.dev](https://www.twitter.com/yourusername)
